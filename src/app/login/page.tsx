@@ -11,13 +11,6 @@ export default function Page() {
       <Container maxW={500}>
         <Authentication />
       </Container>
-      <Container>
-
-        <Box mt={20} textAlign={'center'}>
-          <H3>New to Cloudflare?</H3>
-          <Link href={"/login/cloudflare"}><u><b>Read this</b></u> <ChevronRightIcon /></Link>
-        </Box>
-      </Container>
     </main>
   )
 }
