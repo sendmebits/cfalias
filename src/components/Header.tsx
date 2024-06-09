@@ -27,12 +27,6 @@ export default function Header() {
 
                     <div>
                         <HStack spacing={7}>
-                            <Link as={NextLink} href={"https://github.com/jessetinell/x2.email"} isExternal={true} hideBelow={'md'}>
-                                <HStack spacing={1} >
-                                    <GithubIcon />
-                                    <Text fontWeight={'700'}>Star on Github</Text>
-                                </HStack>
-                            </Link>
 
                             {(isAuthenticated || isLoggingOut) ?
                                 <Button onClick={() => {
