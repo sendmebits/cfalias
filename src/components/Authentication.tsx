@@ -20,7 +20,7 @@ export default function Authentication() {
 
     const router = useRouter();
     const { authorize, isAuthenticated, isLoading } = useContext(UserContext);
-    const [isQuickAuth, setIsQuickAuth] = useState(false);
+    const [isQuickAuth, setIsQuickAuth] = useState(true);
     const toast = useToast()
 
     const { register, handleSubmit } = useForm<IAuthenticationForm>();
