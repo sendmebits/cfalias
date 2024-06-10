@@ -235,28 +235,10 @@ export default function Page() {
               Privacy-first: We don't store any user data
             </ListItemWithIcon>
             <ListItemWithIcon icon={<span>🧁</span>}>
-              Open source. You can view the source code and host this application yourself for free on Vercel (please consider giving the repo a star though: <Link href="https://github.com/jessetinell/x2.email"><u>Github</u> <ExternalLinkIcon />)</Link>
+              Open source. You can view the source code and host this application yourself for free on Vercel.
             </ListItemWithIcon>
           </Box>
 
-          <H3 mb={4}>
-            Demo
-          </H3>
-          <Text>In this demo, I crafted a unique email address exclusively for my Netflix account.</Text>
-          <video controls style={{ border: '3px solid #f8d53c', borderTop: 'none', borderRadius: '10px' }}>
-            <source src="https://res.cloudinary.com/jesset/video/upload/v1696073209/x2.email/demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          {/* <Box mt={100} textAlign={'center'} p={10} backgroundColor={'orange.100'} rounded={10}>
-            <H2 mt={0} color={'orange.900'} >Coming soon</H2>
-            <Text fontSize={'2xl'} color={'orange.900'} mb={5}>
-              Chrome extension
-              <br />
-              Android app
-              <br />
-              iOS app
-            </Text>
-          </Box> */}
         </Container>
       </Box >
 
