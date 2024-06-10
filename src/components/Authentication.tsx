@@ -208,7 +208,7 @@ export default function Authentication() {
                 </Button>
                 <HStack justifyContent={'center'}>
                     <LockIcon />
-                    <Text fontSize={'xs'} textAlign={'center'}>The information will be encrypted and stored locally on your browser</Text>
+                    <Text fontSize={'xs'} textAlign={'center'}>Data is encrypted and stored locally on your browser</Text>
                 </HStack>
             </Stack>
         </>
