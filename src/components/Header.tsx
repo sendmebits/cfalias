@@ -21,7 +21,7 @@ export default function Header() {
         <Box py={[2, 5]} boxShadow='sm'>
             <Container maxW={'100%'}>
                 <Flex justifyContent="space-between" alignItems={'center'}>
-                    <Link as={NextLink} href={isAuthenticated ? "/app" : "/"} width={['6em', '10em']}>
+                    <Link as={NextLink} href={isAuthenticated ? "/app" : "/login"} width={['6em', '10em']}>
                         <img src="/img/logo.svg" alt="x2.email" />
                     </Link>
 
