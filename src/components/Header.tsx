@@ -40,16 +40,6 @@ export default function Header() {
                                     Log out
                                 </Button>
                                 :
-                                <Link as={NextLink} href="/login">
-                                    <Button
-                                        variant='outline'
-                                        size={['md', 'lg']}
-                                        iconSpacing={5}
-                                        rightIcon={<ArrowForwardIcon />}
-                                    >
-                                        Launch
-                                    </Button>
-                                </Link>
                             }
                         </HStack>
                     </div>
