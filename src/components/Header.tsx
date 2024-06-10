@@ -29,6 +29,7 @@ export default function Header() {
                         <HStack spacing={7}>
 
                             {(isAuthenticated || isLoggingOut) ?
+                                <Link as={NextLink} href="/login">
                                 <Button onClick={() => {
                                     setIsLoggingOut(true);
                                     clearAllValues()
@@ -39,6 +40,7 @@ export default function Header() {
                                 >
                                     Log out
                                 </Button>
+                                </Link>
                                 :
                                 <Link as={NextLink} href="/login">
                                     <Button
