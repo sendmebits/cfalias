@@ -21,12 +21,6 @@ export default function Page() {
           <br />
           <br />
           My goal is to build a sleek fancy UI to manage disposable emails and let Cloudflare do the heavy lifting.
-          <br />
-          <br />
-          In the future I might offer a fully fledged Pro plan to manage everything for you.
-          <br />
-          <br />
-          👆 Please let me know if you want this: <a href="mailto:pro@x2.email?subject=Interested"><b><u>pro@x2.email</u></b></a>
         </Text>
       </Container>
 
