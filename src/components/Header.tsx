@@ -30,16 +30,16 @@ export default function Header() {
 
                             {(isAuthenticated || isLoggingOut) ?
                                 <Link as={NextLink} href="/login">
-                                <Button onClick={() => {
-                                    setIsLoggingOut(true);
-                                    clearAllValues()
-                                    localStorage.clear();
-                                }}
-                                    variant='outline'
-                                    isLoading={isLoggingOut}
-                                >
-                                    Log out
-                                </Button>
+                                    <Button onClick={() => {
+                                        setIsLoggingOut(true);
+                                        clearAllValues()
+                                        localStorage.clear();
+                                    }}
+                                        variant='outline'
+                                        isLoading={isLoggingOut}
+                                    >
+                                        Log out
+                                    </Button>
                                 </Link>
                                 :
                                 <Link as={NextLink} href="/login">
