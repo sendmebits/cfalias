@@ -81,7 +81,7 @@ export default function Page() {
           Where are the emails stored?
         </Heading>
         <Text>
-          Neither Cloudflare or x2.email store your emails anywhere. Cloudflare Email Routing simply directs your emails from your alias to your preferred email inbox.
+          Neither Cloudflare or cfalias store your emails anywhere. Cloudflare Email Routing simply directs your emails from your alias to your preferred email inbox.
           You will be able to read your emails in your email client (Gmail, Outlook, Apple Mail, etc.) as you usually do.
         </Text>
       </Container>
