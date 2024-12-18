@@ -167,7 +167,7 @@ export default function Page() {
           </Text>
           <H3>A unique email for each service</H3>
           <Text fontSize={['md', 'lg']}>
-            With the help of <b>x2.email</b> and Cloudflare® you can create free disposable emails that forward emails to your private main inbox. Like demonstrated below.
+            With the help of <b>cfalias</b> and Cloudflare® you can create free disposable emails that forward emails to your private main inbox. Like demonstrated below.
           </Text>
           <Image src="/img/how-it-works-illustration.svg" py={3} />
           <br />
@@ -207,10 +207,10 @@ export default function Page() {
             About the solution
           </H3>
           <Text>
-            <b>x2.email</b> is a minimalistic user interface built on top of Cloudflare's Email Routing service.
+            <b>cfalias</b> is a minimalistic user interface built on top of Cloudflare's Email Routing service.
             <br />
             <br />
-            x2.email communicates directly with the Cloudflare API through a secure proxy (due to CORS).
+            cfalias communicates directly with the Cloudflare API through a secure proxy (due to CORS).
             You will authenticate using your own Cloudflare Account ID, Zone ID and Access token.
             <br />
             <br />
@@ -218,7 +218,7 @@ export default function Page() {
           </Text>
 
           <H3 mb={4}>
-            The benefits of using x2.email
+            The benefits of using cfalias
           </H3>
           <Text fontSize={'lg'} color={'gray.500'} mb={5}>You <i>can</i> use Cloudflare's dashboard to manage your email aliases. But I mean...</Text>
           <Box fontSize={['lg']} p={2}>
