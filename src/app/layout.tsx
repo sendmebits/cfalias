@@ -9,8 +9,8 @@ import '../css/base.scss'
 const font = Poppins({ weight: ["400", "700", "900"], subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'x2.email',
-  description: 'x2.email is a free email forwarding service that allows you to create unlimited email aliases for your domain.',
+  title: 'cfalias',
+  description: 'cfalias is a free email forwarding service that allows you to create unlimited email aliases for your domain.',
 }
 
 
