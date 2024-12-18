@@ -29,7 +29,7 @@ You can choose to use the hosted version or host the application yourself:
 
 
 ## 📖 About
-x2.email was created with the mission to safeguard your primary email inbox. Built on top of Cloudflare's Email Routing service, it serves as an intermediary, ensuring your primary email remains pristine.
+cfalias is a fork of x2.email and was created with the same mission, to safeguard your primary email inbox, with some additional levels of customization. Built on top of Cloudflare's Email Routing service, it serves as an intermediary, ensuring your primary email remains pristine.
 
 ## 🛠 Contributing
 We welcome contributions to improve `x2.email`. Feel free to raise issues, provide solutions, or suggest new features.
