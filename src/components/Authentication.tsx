@@ -85,7 +85,7 @@ export default function Authentication() {
                         </AlertDialogHeader>
                         <AlertDialogBody>
                             <Text>
-                                "Quick Auth" is useful if you use a password manager and want to log in to x2.email faster.
+                                "Quick Auth" is useful if you use a password manager and want to log in to cfalias faster.
                                 <br />
                                 <br />
                                 It's a comma-separated string containing Account ID, Zone ID and Access token.
