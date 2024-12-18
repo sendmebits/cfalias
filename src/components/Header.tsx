@@ -22,7 +22,7 @@ export default function Header() {
             <Container maxW={'100%'}>
                 <Flex justifyContent="space-between" alignItems={'center'}>
                     <Link as={NextLink} href={isAuthenticated ? "/app" : "/login"} width={['6em', '10em']}>
-                        <img src="/img/logo.svg" alt="x2.email" />
+                        <img src="/img/logo.svg" alt="cfalias" />
                     </Link>
 
                     <div>
