@@ -9,7 +9,7 @@ export default function Page() {
           Getting started
         </Heading>
         <Text>
-          To use x2.email you will need a Cloudflare® account and a web domain connected to it.
+          To use cfalias you will need a Cloudflare® account and a web domain connected to it.
           <br />
           <br />
           <b>Why this complexity?</b>

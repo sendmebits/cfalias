@@ -21,8 +21,16 @@ export default function Header() {
         <Box py={[2, 5]} boxShadow='sm'>
             <Container maxW={'100%'}>
                 <Flex justifyContent="space-between" alignItems={'center'}>
-                    <Link as={NextLink} href={isAuthenticated ? "/app" : "/login"} width={['6em', '10em']}>
-                        <img src="/img/logo.svg" alt="cfalias" />
+                    <Link
+                        as={NextLink}
+                        href={isAuthenticated ? "/app" : "/login"}
+                        aria-label="cfalias"
+                        _hover={{ textDecoration: 'none' }}
+                    >
+                        <Flex alignItems="flex-end" fontSize={['2xl', '4xl']} fontWeight={900} lineHeight={1} letterSpacing="-0.04em">
+                            <Text as="span">cfalias</Text>
+                            <Box as="span" bg="orange.300" w="0.2em" h="0.2em" ml="0.06em" mb="0.04em" />
+                        </Flex>
                     </Link>
 
                     <div>
