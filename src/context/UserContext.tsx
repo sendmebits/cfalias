@@ -4,9 +4,28 @@ import encryption from '@/utils/encryption';
 import { CloudflareApiClient } from '@/services/cloudflare';
 import { CloudflareListEmailDestinationsResponse } from '@/services/cloudflare/cloudflare.types';
 
-const LOCAL_STORAGE_ACCOUNT_ID = "x2-email-cloudflare_account_identifier";
-const LOCAL_STORAGE_ZONE_ID = "x2-email-cloudflare_zone_identifier";
-const LOCAL_STORAGE_ACCESS_TOKEN = "x2-email-cloudflare_access_token";
+const LOCAL_STORAGE_ACCOUNT_ID = "cfalias-cloudflare_account_identifier";
+const LOCAL_STORAGE_ZONE_ID = "cfalias-cloudflare_zone_identifier";
+const LOCAL_STORAGE_ACCESS_TOKEN = "cfalias-cloudflare_access_token";
+
+// Keys used before the rebrand from x2.email. Values are moved to the new keys on load so existing logins keep working.
+const LEGACY_LOCAL_STORAGE_KEYS: Record<string, string> = {
+  "x2-email-cloudflare_account_identifier": LOCAL_STORAGE_ACCOUNT_ID,
+  "x2-email-cloudflare_zone_identifier": LOCAL_STORAGE_ZONE_ID,
+  "x2-email-cloudflare_access_token": LOCAL_STORAGE_ACCESS_TOKEN,
+};
+
+function migrateLegacyLocalStorageKeys() {
+  Object.entries(LEGACY_LOCAL_STORAGE_KEYS).forEach(([legacyKey, newKey]) => {
+    const legacyValue = localStorage.getItem(legacyKey);
+    if (legacyValue !== null) {
+      if (localStorage.getItem(newKey) === null) {
+        localStorage.setItem(newKey, legacyValue);
+      }
+      localStorage.removeItem(legacyKey);
+    }
+  });
+}
 
 export const UserContext = React.createContext({
 
@@ -66,6 +85,8 @@ export function UserProvider({ children }: any) {
   useEffect(() => {
 
     async function checkIfAuthenticated() {
+
+      migrateLegacyLocalStorageKeys();
 
       // Get decrypted data from Local Storage on the client-side and set the state
       const decryptedAccountId = encryption.getItem(LOCAL_STORAGE_ACCOUNT_ID);
